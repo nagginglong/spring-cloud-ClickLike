@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: Consumer #服务名称 唯一
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 124.71.183.250:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+  main:
+    allow-bean-definition-overriding: true #服务可以被使用多次
